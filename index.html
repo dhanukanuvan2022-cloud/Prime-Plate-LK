@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime Plate Restaurant | Kamburupitiya</title>
+<meta name="description" content="Prime Plate, a modern family restaurant in Kamburupitiya. Rice & curry, kottu, burgers, pizza and fried rice. VIP area, parties, BYOB. Book on WhatsApp.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#home" class="brand"><img src="images/logo.jpg" alt="" width="40" height="40"><span>Prime Plate</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="links">
+    <a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a><a href="#visit">Find us</a>
+    <a href="#book" class="btn sm">Book a table</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="slides">
+    <div style="background-image:url(images/rice.jpg)" class="on"></div>
+    <div style="background-image:url(images/burger.jpg)"></div>
+    <div style="background-image:url(images/interior.jpg)"></div>
+    <div style="background-image:url(images/soup.jpg)"></div>
+  </div>
+  <div class="hero-in">
+    <svg class="lid" viewBox="0 0 200 90" aria-hidden="true">
+      <path d="M92 10 q0-8 8-8 t8 8 v8 q40 4 70 36 l6 8 q4 6-4 6 H12 q-8 0-4-6 l6-8 q30-32 70-36z" fill="#c9a227"/>
+      <path d="M40 52 q22-22 52-26" stroke="#fff" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </svg>
+    <h1><span>Prime</span> <span>Plate</span></h1>
+    <p class="tag">Where every taste meets</p>
+    <p class="where">Modern family restaurant · No 177, Matara Road, Kamburupitiya</p>
+    <div class="cta">
+      <a href="#book" class="btn">Book on WhatsApp</a>
+      <a href="#menu" class="btn ghost">See the menu</a>
+    </div>
+  </div>
+  <a href="#about" class="down" aria-label="Scroll down"></a>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap two">
+    <img src="images/interior.jpg" alt="Prime Plate dining area with green booth seating" loading="lazy" class="rise">
+    <div class="rise">
+      <h2>A table for every occasion</h2>
+      <p>Prime Plate is a modern, luxury family restaurant on Matara Road in Kamburupitiya. We cook Sri Lankan rice and curry, kottu and fried rice, and we bake pizza and grill burgers in our own Pizza Corner. Our guests tell us the food is delicious, the prices fair and the staff friendly.</p>
+      <ul class="feat">
+        <li><b>VIP area</b>Private seating for small groups</li>
+        <li><b>Parties</b>Birthdays and get-togethers</li>
+        <li><b>Pizza corner</b>Fresh pizza from Prime Pizza</li>
+        <li><b>BYOB</b>Bring your own bottle</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="menu">
+  <div class="wrap">
+    <h2>What we serve</h2>
+    <p class="lead">Ask our team for today's dishes and prices, or message us on WhatsApp.</p>
+    <div class="grid5">
+      <article><img src="images/rice.jpg" alt="Yellow rice with curries on a banana leaf" loading="lazy"><h3>Rice &amp; curry</h3><p>Yellow rice, rich curries, cutlet and papadam on a banana leaf.</p></article>
+      <article><div class="ph">Kottu</div><h3>Kottu</h3><p>Chopped roti stir-fried with vegetables, egg or your choice of meat.</p></article>
+      <article><img src="images/burger.jpg" alt="Burger with fried egg and fries" loading="lazy"><h3>Burgers</h3><p>Sesame bun, egg, tomato and a side of hot fries.</p></article>
+      <article><div class="ph">Pizza</div><h3>Pizza</h3><p>Baked at the Pizza Corner, served hot for sharing.</p></article>
+      <article><div class="ph">Fried rice</div><h3>Fried rice</h3><p>Wok-fried rice with vegetables, plus warm soups to start.</p></article>
+    </div>
+    <a href="https://wa.me/94717038384?text=Hi%20Prime%20Plate%2C%20please%20send%20me%20your%20menu%20and%20prices." class="btn" target="_blank" rel="noopener">Ask for the menu</a>
+  </div>
+</section>
+
+<section class="sec" id="gallery">
+  <div class="wrap">
+    <h2>From our kitchen and dining room</h2>
+    <div class="gal">
+      <img src="images/rice.jpg" alt="Rice and curry" loading="lazy">
+      <img src="images/burger.jpg" alt="Burger and fries" loading="lazy">
+      <img src="images/soup.jpg" alt="Vegetable egg soup" loading="lazy">
+      <img src="images/interior.jpg" alt="Dining room" loading="lazy">
+    </div>
+    <img src="images/banner.jpg" alt="Prime Plate menu highlights" loading="lazy" class="banner">
+  </div>
+</section>
+
+<section class="sec gold" id="book">
+  <div class="wrap two">
+    <div>
+      <h2>Book a table</h2>
+      <p>Fill in the form and your booking opens in WhatsApp, ready to send to our team. We will reply to confirm.</p>
+    </div>
+    <form id="bookForm" novalidate>
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+      <div class="row">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time<input name="time" type="time" required></label>
+      </div>
+      <div class="row">
+        <label>Guests<input name="guests" type="number" min="1" max="60" value="2" required></label>
+        <label>Seating<select name="area"><option>Main hall</option><option>VIP area</option></select></label>
+      </div>
+      <label>Notes (optional)<textarea name="note" rows="2" placeholder="Birthday, allergies, pizza order..."></textarea></label>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn dk" type="submit">Send booking on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="sec dark" id="reviews">
+  <div class="wrap">
+    <h2>4.7 on Google Maps</h2>
+    <p class="lead">What guests say about us.</p>
+    <div class="grid3">
+      <blockquote>Delicious food at an affordable price, a nice place and fast, friendly service.</blockquote>
+      <blockquote>Quiet place, good food and fair prices. Highly recommended.</blockquote>
+      <blockquote>Comfy vibe, great food and very kind service.</blockquote>
+    </div>
+    <a class="btn ghost" href="https://maps.app.goo.gl/ysU4Qkxa4q7Mp3bu6" target="_blank" rel="noopener">Read reviews on Google Maps</a>
+  </div>
+</section>
+
+<section class="sec" id="visit">
+  <div class="wrap two">
+    <div>
+      <h2>Find us</h2>
+      <p><b>Address</b><br>No 177, Matara Road, Kamburupitiya, Sri Lanka</p>
+      <p><b>Opening hours</b><br>Open daily, 10:30 AM to 11:00 PM</p>
+      <p><b>Call</b><br><a href="tel:+94717038384">+94 71 703 8384</a><br><a href="tel:+94701150016">+94 70 115 0016</a></p>
+      <p><b>WhatsApp</b><br><a href="https://wa.me/94717038384" target="_blank" rel="noopener">+94 71 703 8384</a></p>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=6.0768327,80.5642385" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <iframe title="Prime Plate on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=6.0768327,80.5642385&hl=en&z=16&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <img src="images/logo.jpg" alt="Prime Plate logo" width="72" height="72">
+  <p>Prime Plate · Where every taste meets</p>
+  <div class="soc">
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" data-soc="facebook">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" data-soc="instagram">Instagram</a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok" data-soc="tiktok">TikTok</a>
+  </div>
+  <small>© <span id="yr"></span> Prime Plate Restaurant, Kamburupitiya</small>
+</footer>
+
+<a class="wa" href="https://wa.me/94717038384" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp us</a>
+
+<script src="script.js"></script>
+</body>
+</html>
